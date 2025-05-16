@@ -63,9 +63,9 @@ classDiagram
     Book <|-- NonFiction
     Book <|-- Horror
     Book <|-- SignedBook : <<Decorator>>
-    StratDiscount <|.. DiscountMember : implements
-    Book o--> StratDiscount : uses
-    SignedBook --> Book : wraps
-    BookFactory ..> Book : creates
-    BookManager o--> Book : manages
-    BookManager --> BookObserver : notifies
+    StratDiscount <|.. DiscountMember : implementa
+    Book o--> StratDiscount : utiliza
+    SignedBook --> Book : envuelve
+    BookFactory ..> Book : crea
+    BookManager o--> Book : gestiona
+    BookManager --> BookObserver : notifica
